@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реклама Coral Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://your-background-image-link.com') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            transition: background 0.5s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 500;
+            animation: slideIn 1.5s ease-in-out;
+            margin-bottom: 20px;
+            font-family: 'Sacramento', cursive;
+        }
+
+        .tagline {
+            font-size: 34px;
+            font-weight: 300;
+            color: #f1c40f;
+            margin-bottom: 40px;
+            font-style: italic;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-item {
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .images img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+        .whatsapp {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #25D366;
+            color: white;
+            font-size: 22px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            animation: bounceIn 2s ease-in-out;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        .additional-text {
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: 300;
+            color: #f1c40f;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Преимущества продукции Coral Club</h1>
+        <div class="tagline">
+            <p>Жить в гармонии с собой — это возможно.</p>
+        </div>
+        <div class="images">
+            <div class="image-item">
+                <img src="https://kz.coral.club/upload/iblock/00a/l6zk80fbjpj6it6yoacl8wz0r7xke591.webp" alt="Product 1">
+            </div>
+            <div class="image-item">
+                <img src="https://ru.natural-products.lt/wp-content/uploads/2024/10/b-luron-1-1.jpg" alt="Product 2">
+            </div>
+            <div class="image-item">
+                <img src="https://kz.coral.club/upload/iblock/9ec/hrjuzmweg213l9expi08rfbwq1vbzwjc.webp" alt="Product 3">
+            </div>
+        </div>
+        <a href="https://wa.me/79640741621" class="whatsapp">Связаться через WhatsApp</a>
+        <div class="additional-text">
+            <p>Интересует больше товаров? Свяжитесь с нами, чтобы узнать об уникальных предложениях и расширенной линейке продукции!</p>
+        </div>
+    </div>
+
+</body>
+</html>
